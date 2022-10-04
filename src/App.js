@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import AssignmentMarks from './components/AssignmentMarks/AssignmentMarks';
+import Navbar from './components/Navbar/Navbar';
+import PhoneBar from './components/PhoneBar/PhoneBar';
+import Pricing from './components/Pricing/Pricing';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Navbar></Navbar>
+      <h1 className='underline font-bold text-4xl'>This is Header!!!</h1>
+      <p>This is just a paragraph</p>
+      <Pricing></Pricing>
+      <AssignmentMarks></AssignmentMarks>
+      < PhoneBar></PhoneBar>
     </div>
   );
 }
